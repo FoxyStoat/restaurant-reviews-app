@@ -135,6 +135,14 @@ nav h1 a {
   background-color: #ccc;
 }
 
+.leaflet-control {
+  opacity: 0.9;
+}
+
+.leaflet-control a {
+  color: #01447e;
+}
+
 /* ====================== Restaurant Filtering ====================== */
 
 .filter-options {
