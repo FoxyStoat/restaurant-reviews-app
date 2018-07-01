@@ -273,10 +273,33 @@ nav h1 a {
 	width: 100%;
 }
 
+#restaurant-hours {
+  width: 100%;
+  font-size: 1.5em;
+  line-height: 1.7em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2em;
+}
+
+#restaurant-hours td {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #666;
+}
+
+#restaurant-hours th {
+  font-weight: bold;
+}
+
 #restaurant-container, #reviews-container {
   padding: 1em;
   width: 100%;
 }
+
+/* ====================== Reviews ====================== */
 
 #reviews-container {
   background: url(../img/restaurant_icons.png);
@@ -309,25 +332,8 @@ nav h1 a {
   font-size: 1.6em;
 }
 
-#restaurant-hours {
-  width: 100%;
-  font-size: 1.5em;
-  line-height: 1.7em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 2em;
-}
-
-#restaurant-hours td {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  color: #666;
-}
-
-#restaurant-hours th {
-  font-weight: bold;
+.review-header {
+  background: #252831; 
 }
 
 /* ====================== Media Queries ====================== */
