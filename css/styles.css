@@ -306,7 +306,7 @@ nav h1 a {
 }
 
 #reviews-container h2 {
-  color: #b75800;
+  color: #1b6ca1;
   font-weight: 300;
   padding: 1em;
 }
@@ -318,11 +318,8 @@ nav h1 a {
 
 #reviews-list li {
   background-color: #fff;
-  border: 2px solid #ddd;
   list-style-type: none;
   margin: 1em 1em 3em;
-  /* overflow: hidden; */
-  padding: 1.5em;
   box-shadow: 5px 5px 5px #ddd;
 }
 
@@ -333,7 +330,15 @@ nav h1 a {
 }
 
 .review-header {
-  background: #252831; 
+  box-shadow: 5px 5px 5px #ddd;
+  background: #1b6ca1;
+  color: #fff;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.review-comments {
+  padding: 1.5em;
 }
 
 /* ====================== Media Queries ====================== */
