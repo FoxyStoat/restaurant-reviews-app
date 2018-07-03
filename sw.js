@@ -22,3 +22,19 @@ const cacheAssets = [
  './img/10.jpg',
  './img/restaurant_icons.png'
 ];
+
+/**
+ * Install event listener to the service worker, service
+ * worker will not install until the code inside waitUntil
+ * has sucseeded.
+ */
+self.addEventListener('install', function (evt) {
+  evt.waitUntil(
+    caches
+    .open(cacheName)
+    .then((cache) => {
+      console.log('caching:' + cacheAssets);
+      return cache.addAll(cacheAssets);
+    })
+  );
+});
