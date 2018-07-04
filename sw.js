@@ -1,5 +1,5 @@
 // Add version number for easy updating
-const cacheName = 'cache-v1';
+const cacheName = 'restaurant-v1';
 // Files to cache:
 const cacheAssets = [
 	'./',
