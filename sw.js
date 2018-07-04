@@ -38,3 +38,25 @@ self.addEventListener('install', function (evt) {
 		})
 	);
 });
+
+/**
+ * Removing outdated caches
+ */
+self.addEventListener('activate', function (evt) {
+	evt.waitUntil(
+		caches
+		.keys()
+		.then((cacheNames) => {
+			return Promise.all(
+				cacheNames.filter(function (thisCacheName) {
+					return cacheName.startsWith('restaurant-') &&
+						thisCacheName != cacheName;
+						console.log('Service Working: Removing Outdated Caches from', thisCacheName );
+				})
+				.map(function (cacheName) {
+					return caches.delete(cacheName);
+				})
+			);
+		})
+	);
+});
