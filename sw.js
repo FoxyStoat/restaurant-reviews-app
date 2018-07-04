@@ -72,3 +72,12 @@ self.addEventListener('fetch', (evt) => {
 		})
 	);
 })
+
+/**
+ * Resources used to help with service worker:
+ * https://www.youtube.com/watch?v=TxXwlOAXUko
+ * https://developers.google.com/web/fundamentals/primers/service-workers/
+ * https://developers.google.com/web/ilt/pwa/caching-files-with-service-worker
+ * https://www.youtube.com/watch?v=BfL3pprhnms&t=449s
+ *
+*/
