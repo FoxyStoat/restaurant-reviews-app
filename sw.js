@@ -24,9 +24,8 @@ const cacheAssets = [
 ];
 
 /**
- * Install and store site assets
- * Service worker will not install until the code inside
- * waitUntil has sucseeded.
+ * Install Event Listener
+ * Open a cache and cache needed assets
  */
 self.addEventListener('install', function (evt) {
 	evt.waitUntil(
@@ -60,3 +59,16 @@ self.addEventListener('activate', function (evt) {
 		})
 	);
 });
+
+/**
+ * Respond to requests
+ */
+self.addEventListener('fetch', (evt) => {
+	evt.respondWith(
+		caches.match(evt.request)
+		.then((response) => {
+			// Return cached version or fetch
+			return response || fetch(evt.request);
+		})
+	);
+})
