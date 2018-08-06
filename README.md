@@ -16,6 +16,10 @@ You have been provided the code for a restaurant reviews website. The code has a
 
 Clone or download this repo project to your local machine, unzip and serve up a HTTP server and open up index.html in local host port 5500.  I used Visual studio code which will serve up a live server for you.
 
+##### Screenshot of Finished Project
+
+![screenshot of finished project](screenshot-restaurant-reviews.png "screenshot of finished project")
+
 ### Note about ES6
 
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code.
